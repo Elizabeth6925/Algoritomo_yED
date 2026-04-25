@@ -1,2 +1,1 @@
-# Algoritomo_yED
-Entrega de trabajos
+Algoritomo_yED
