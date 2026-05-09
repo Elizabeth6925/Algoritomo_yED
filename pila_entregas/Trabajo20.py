@@ -7,13 +7,13 @@
 import movimiento
 
 print("Registro de movimientos del robot")
-print("Escriba 'fin' para terminar")
+print("toque espacio para terminar")
 
 while True:
 
     pasos = input("Ingrese cantidad de pasos: ")
 
-    if pasos.lower() == "fin":
+    if pasos.lower() == " ":
         break
 
     direccion = input(
@@ -28,4 +28,3 @@ print("\nMovimientos de retorno:")
 
 for pasos, direccion in movimientos_retorno:
     print(f"{pasos} pasos hacia {direccion}")
-    

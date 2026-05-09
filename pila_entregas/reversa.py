@@ -1,6 +1,7 @@
 
 
 def obtener_direccion_opuesta(direccion):
+
     direcciones_opuestas = {
         'norte': 'sur',
         'sur': 'norte',
@@ -12,5 +13,4 @@ def obtener_direccion_opuesta(direccion):
         'suroeste': 'noreste'
     }
 
-    return direcciones_opuestas.get(direccion, None)            
-
+    return direcciones_opuestas.get(direccion, None)
