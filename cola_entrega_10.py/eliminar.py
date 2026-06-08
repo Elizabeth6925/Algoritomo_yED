@@ -2,15 +2,19 @@
 
 from collections import deque
 
-def eliminar_por_app(cola, app):
-    cola_sin_notf = deque()
+
+def eliminar_por_app(cola_original, app_objetivo):
+  
+    cola_resultado = deque()
     eliminadas = 0
 
-    while cola:
-        hora, nombre_app, mensaje = cola.popleft()
-        if nombre_app != app:
-            cola_sin_notf.append((hora, nombre_app, mensaje))
-        else:
-            eliminadas += 1
+    while cola_original:
+        hora, app, mensaje = cola_original.popleft()
 
-    return eliminadas, cola_sin_notf
+        if app.lower() == app_objetivo.lower():
+            eliminadas += 1          
+            
+        else:
+            cola_resultado.append((hora, app, mensaje))   
+
+    return eliminadas, cola_resultado
