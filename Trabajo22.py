@@ -27,7 +27,7 @@ def usar_la_fuerza(mochila, indice=0, contador=0):
     return usar_la_fuerza(mochila, indice + 1, contador)
 
 # CARGA VECTOR
-
+#uh 
 mochila = []
 
 n = int(input("¿Cuántos objetos tiene la mochila?: "))
