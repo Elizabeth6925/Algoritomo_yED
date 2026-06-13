@@ -1,30 +1,7 @@
-#22. Se tienen una cola con personajes de Marvel Cinematic Universe (MCU), 
-# de los cuales se conoce el nombre del personaje, el nombre del superhéroe y su género (Masculino M y FemeninoF)
-# –por ejemplo {Tony Stark, Iron Man, M}, {Steve Rogers, Capitán América, M}, {Natasha Ro-manoff, Black Widow, F},
-#  etc., desarrollar un algoritmo que resuelva las siguientes actividades:
 
+from crear_cola import crear_cola, encolar, esta_vacia
 
-def crear_cola():
-    return []
-
-def esta_vacia(cola):
-    return len(cola) == 0
-
-def encolar(cola, elemento):
-    cola.append(elemento)
-
-def desencolar(cola):
-    if not esta_vacia(cola):
-        return cola.pop(0)
-    return None
-
-def frente(cola):
-    if not esta_vacia(cola):
-        return cola[0]
-    return None
-
-
-def cargar_cola():
+def carga_cola():
     cola = crear_cola()
     personajes = [
         {"nombre_real": "Thor Odinson",          "nombre_heroe": "Thor",            "genero": "M"},
@@ -70,9 +47,3 @@ def mostrar_cola(cola):
         print(f"{p['nombre_real']:<25} {p['nombre_heroe']:<20} {p['genero']}")
 
 
-def main():
-    cola = cargar_cola()
-    mostrar_cola(cola)
-
-
-main()
