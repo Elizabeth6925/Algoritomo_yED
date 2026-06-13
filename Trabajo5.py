@@ -1,5 +1,13 @@
 #Desarrollar una función que permita convertir un número romano en un número decimal.
 
+# El sistema de numeración romana se basa en la combinación de letras del alfabeto latino para representar valores numéricos. Las letras y sus valores correspondientes son:
+# I = 1
+# V = 5
+# X = 10
+# L = 50
+# C = 100
+# D = 500
+# M = 1000
 
 def romano_a_dec(romano, total=0, valor_prev=0):
     valores = {'I':1,'V':5,'X':10,'L':50,'C':100,'D':500,'M':1000 }
