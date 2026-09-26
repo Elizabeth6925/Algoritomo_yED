@@ -17,4 +17,5 @@ def eliminar_por_app(cola_original, app_objetivo):
         else:
             cola_resultado.append((hora, app, mensaje))   
 
-    return eliminadas, cola_resultado
+    return eliminadas, cola_resultado  
+    

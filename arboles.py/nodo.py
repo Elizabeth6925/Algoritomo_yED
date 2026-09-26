@@ -29,5 +29,6 @@ def insert_node(self, value: any):
     else:
         node = Node(value)
         self._insert_node(value, self.root) 
+        
 
 
