@@ -17,3 +17,31 @@
 # l. modifique el nombre de la criatura Ladón por Dragón Ladón;
 # m. realizar un listado por nivel del árbol;
 # n. muestre las criaturas capturadas por Heracles.
+
+
+from criaturasdata import CRIATURAS_DATA
+from genArbol import ArbolBinario
+
+
+if __name__ == "__main__":
+    # 1. Crear el árbol vacío
+    arbol = ArbolBinario()
+
+    # 2. Insertar todas las criaturas en el árbol
+    for nombre, derrotado_por in CRIATURAS_DATA:
+        arbol.insertar(nombre, derrotado_por)
+
+    # punto a : Mostrar el recorrido inorden
+
+    print("Listado inorden de criaturas:")
+    arbol.recorrido_inorden(arbol.raiz)
+
+
+
+
+# punto b : Descrpcion de cada criatura
+
+    print("\nDescripción de cada criatura:")
+    for nombre, _ in CRIATURAS_DATA:
+        descripcion = input(f"Ingrese una breve descripción para {nombre}: ")
+        arbol.agregar_descripcion(nombre, descripcion)
