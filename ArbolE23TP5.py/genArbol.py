@@ -10,6 +10,8 @@ class Nodo():
         self.izq = None
         self.der = None
         self.derrotado_por = derrotado_por    # Quién la derrotó (puede ser None)
+        self.descripcion = ""   # Breve descripción de la criatura
+        self.capturada = None  # Nombre del héroe o dios que la capturó punto g 
         self.altura = 0
 
 class ArbolBinario():
@@ -82,7 +84,49 @@ class ArbolBinario():
         if nodo is not None:
             self.recorrido_inorden(nodo.izq)
             print(f"Criatura: {nodo.nombre}, Derrotado por: {nodo.derrotado_por}")
+            if nodo.descripcion:
+                print(f"  Descripción: {nodo.descripcion}")
             self.recorrido_inorden(nodo.der)
+
+    def buscar(self, nombre):
+        def __buscar(nodo, nombre):
+            if nodo is None:
+                return None
+
+            if nodo.nombre == nombre:
+                return nodo
+
+            if nombre < nodo.nombre:
+                return __buscar(nodo.izq, nombre)
+            else:
+                return __buscar(nodo.der, nombre)
+
+        return __buscar(self.raiz, nombre)
+
+    def agregar_descripcion(self, nombre, descripcion):
+        nodo = self.buscar(nombre)
+
+        if nodo is not None:
+            nodo.descripcion = descripcion
+
+    def mostrar_informacion(self, nombre):
+        nodo = self.buscar(nombre)
+
+        if nodo is not None:
+            print(f"Nombre: {nodo.nombre}")
+            print(f"Derrotado por: {nodo.derrotado_por}")
+            print(f"Descripción: {nodo.descripcion}")
+        else:
+            print("La criatura no existe.")
+
+    def recorrido_inorden(self, nodo):
+        if nodo is not None:
+            self.recorrido_inorden(nodo.izq)
+            print(f"Criatura: {nodo.nombre}, Derrotado por: {nodo.derrotado_por}")
+            if nodo.descripcion:
+                print(f"  Descripción: {nodo.descripcion}")
+            self.recorrido_inorden(nodo.der)
+
 
 
 
