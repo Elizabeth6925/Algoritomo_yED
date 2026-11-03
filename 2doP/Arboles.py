@@ -4,9 +4,7 @@
 
 from tree import BinaryTree, Node
 
-
 # CLASE POKEMON 
-
 
 class Pokemon:
     def __init__(self, nombre, numero, tipos, debilidades, mega_evolucion, gigamax):
