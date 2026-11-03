@@ -1,5 +1,6 @@
 from typing import Any, Optional
 
+
 class List(list):
 
     __CRITERION_FUNCTION = {}

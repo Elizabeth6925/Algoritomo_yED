@@ -1,6 +1,7 @@
 
 from typing import Any
 
+
 class HeapMax():
 
     def __init__(self):

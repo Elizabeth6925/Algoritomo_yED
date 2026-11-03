@@ -1,7 +1,6 @@
 from copy import copy, deepcopy
 from typing import Any
 
-
 class Stack:
 
     def __init__(self):

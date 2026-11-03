@@ -190,3 +190,4 @@ if personajes_9_episodios:
         print(f"  - {p}")
 else:
     print("  No se encontraron personajes con aristas de peso 9.")
+    

@@ -5,7 +5,6 @@ from stack import Stack
 from heap import HeapMin
 
 
-
 class Graph(List):
 
 

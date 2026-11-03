@@ -20,7 +20,6 @@
 #G cargue al menos 100 Pokémons.
 
 import json
-
 from Arboles import Pokemon, crear_arbol_nombre, crear_arbol_numero, crear_arbol_tipo
 
 #leer el json y crear los objetos Pokemon
