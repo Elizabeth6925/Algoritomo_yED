@@ -1,0 +1,136 @@
+{
+"personajes": [
+{
+"nombre": "Luke Skywalker",
+"aristas": [
+{"destino": "Darth Vader", "episodios": 3},
+{"destino": "Leia", "episodios": 6},
+{"destino": "Han Solo", "episodios": 5},
+{"destino": "Chewbacca", "episodios": 5},
+{"destino": "C-3PO", "episodios": 5},
+{"destino": "R2-D2", "episodios": 5},
+{"destino": "Yoda", "episodios": 3}
+]
+},
+{
+"nombre": "Darth Vader",
+"aristas": [
+{"destino": "Luke Skywalker", "episodios": 3},
+{"destino": "Leia", "episodios": 3},
+{"destino": "C-3PO", "episodios": 3},
+{"destino": "R2-D2", "episodios": 3},
+{"destino": "Yoda", "episodios": 2},
+{"destino": "Boba Fett", "episodios": 2}
+]
+},
+{
+"nombre": "Yoda",
+"aristas": [
+{"destino": "Luke Skywalker", "episodios": 3},
+{"destino": "Darth Vader", "episodios": 2},
+{"destino": "C-3PO", "episodios": 3},
+{"destino": "R2-D2", "episodios": 4},
+{"destino": "Chewbacca", "episodios": 1}
+]
+},
+{
+"nombre": "Boba Fett",
+"aristas": [
+{"destino": "Darth Vader", "episodios": 2},
+{"destino": "Han Solo", "episodios": 2},
+{"destino": "Chewbacca", "episodios": 2},
+{"destino": "C-3PO", "episodios": 2},
+{"destino": "R2-D2", "episodios": 2}
+]
+},
+{
+"nombre": "C-3PO",
+"aristas": [
+{"destino": "Luke Skywalker", "episodios": 5},
+{"destino": "Darth Vader", "episodios": 3},
+{"destino": "Yoda", "episodios": 3},
+{"destino": "Leia", "episodios": 9},
+{"destino": "R2-D2", "episodios": 9},
+{"destino": "Han Solo", "episodios": 5},
+{"destino": "Chewbacca", "episodios": 6},
+{"destino": "Boba Fett", "episodios": 2}
+]
+},
+{
+"nombre": "Leia",
+"aristas": [
+{"destino": "Luke Skywalker", "episodios": 6},
+{"destino": "Darth Vader", "episodios": 3},
+{"destino": "C-3PO", "episodios": 9},
+{"destino": "R2-D2", "episodios": 8},
+{"destino": "Han Solo", "episodios": 5},
+{"destino": "Chewbacca", "episodios": 5}
+]
+},
+{
+"nombre": "Rey",
+"aristas": [
+{"destino": "Kylo Ren", "episodios": 3},
+{"destino": "Chewbacca", "episodios": 3},
+{"destino": "R2-D2", "episodios": 2},
+{"destino": "C-3PO", "episodios": 3},
+{"destino": "BB-8", "episodios": 3}
+]
+},
+{
+"nombre": "Kylo Ren",
+"aristas": [
+{"destino": "Rey", "episodios": 3},
+{"destino": "Chewbacca", "episodios": 3},
+{"destino": "BB-8", "episodios": 3}
+]
+},
+{
+"nombre": "Chewbacca",
+"aristas": [
+{"destino": "Luke Skywalker", "episodios": 5},
+{"destino": "Han Solo", "episodios": 5},
+{"destino": "C-3PO", "episodios": 6},
+{"destino": "Leia", "episodios": 5},
+{"destino": "R2-D2", "episodios": 6},
+{"destino": "Rey", "episodios": 3},
+{"destino": "Kylo Ren", "episodios": 3},
+{"destino": "Boba Fett", "episodios": 2}
+]
+},
+{
+"nombre": "Han Solo",
+"aristas": [
+{"destino": "Luke Skywalker", "episodios": 5},
+{"destino": "Chewbacca", "episodios": 5},
+{"destino": "C-3PO", "episodios": 5},
+{"destino": "Leia", "episodios": 5},
+{"destino": "R2-D2", "episodios": 5},
+{"destino": "Boba Fett", "episodios": 2}
+]
+},
+{
+"nombre": "R2-D2",
+"aristas": [
+{"destino": "C-3PO", "episodios": 9},
+{"destino": "Luke Skywalker", "episodios": 5},
+{"destino": "Leia", "episodios": 8},
+{"destino": "Darth Vader", "episodios": 3},
+{"destino": "Yoda", "episodios": 4},
+{"destino": "Chewbacca", "episodios": 6},
+{"destino": "Han Solo", "episodios": 5},
+{"destino": "Rey", "episodios": 2},
+{"destino": "BB-8", "episodios": 2}
+]
+},
+{
+"nombre": "BB-8",
+"aristas": [
+{"destino": "Rey", "episodios": 3},
+{"destino": "Kylo Ren", "episodios": 3},
+{"destino": "R2-D2", "episodios": 2},
+{"destino": "C-3PO", "episodios": 2}
+]
+}
+]
+}
